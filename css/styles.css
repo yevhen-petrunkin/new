@@ -1,0 +1,71 @@
+/* ============RESET=============== */
+:root {
+  --light-color: #ffffff;
+  --dark-color: #000000;
+  --style-color: #0f0bc7;
+  --bg-color: #e3e2fd;
+  --footer-gradient-color: #040335;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+/* ================== HEADER ======================= */
+
+.navbar {
+  position: absolute;
+  top: 39px;
+  text-align: center;
+}
+
+.nav-logo {
+  color: var(--light-color);
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+/* ==================== MAIN ========================= */
+
+.hero {
+  background-image: linear-gradient(108.21deg, #2272ff 0%, #0d03c3 97.89%);
+  height: 1181.5px;
+}
