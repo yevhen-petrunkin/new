@@ -3,14 +3,17 @@
   --light-color: #ffffff;
   --dark-color: #000000;
   --style-color: #0f0bc7;
-  --bg-color: #e3e2fd;
+  --bg-color: #eeeeee;
+  --secondary-bg-color: #e3e2fd;
   --footer-gradient-color: #040335;
 }
 
 body {
   color: var(--light-color);
+  background-color: var(--bg-color);
   font-family: 'Inter', sans-serif;
   letter-spacing: -0.02em;
+  min-width: 1440px;
 }
 
 h1,
@@ -50,22 +53,38 @@ button {
   width: 1200px;
 }
 
-/* ================== HEADER ======================= */
-
-.nav-relative {
-  position: relative;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
+/* ================== HEADER ======================= */
+
+/* .nav-relative {
+  position: relative;
+} */
+
 .navbar {
+  min-width: 1200px;
   position: absolute;
   top: 39px;
-  text-align: center;
+  left: 120px;
+  z-index: 2;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .nav-logo {
-  margin-right: 280px;
+  /* margin-right: 280px; */
   font-family: 'Inter';
   font-weight: 600;
   font-size: 18px;
@@ -88,7 +107,7 @@ button {
 
 .nav-btn {
   padding: 12px 30px;
-  margin-left: 255px;
+  /* margin-left: 255px; */
   background-color: var(--light-color);
   border-radius: 50px;
   color: var(--dark-color);
@@ -102,12 +121,16 @@ button {
 /* =========Hero========== */
 
 .hero {
+  position: relative;
   background-image: linear-gradient(108.21deg, #2272ff 0%, #0d03c3 97.89%);
-  height: 1181.5px;
+  padding-top: 219px;
+  padding-bottom: 595.5px;
 }
 
 .hero-title {
-  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
   width: 992px;
   font-weight: 800;
   font-size: 72px;
@@ -118,7 +141,9 @@ button {
 }
 
 .hero-text {
-  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
   width: 579px;
   font-weight: 500;
   font-size: 20px;
@@ -126,22 +151,47 @@ button {
   text-align: center;
 }
 
+.hero-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-input {
+  width: 575px;
+  height: 67px;
+  border-width: 0px;
+  border-radius: 71px;
+}
+
 .hero-btn {
   padding: 16px 30px;
-  margin: 0 auto;
+  margin-left: -176px;
   background-image: linear-gradient(106.75deg, #2272ff 0%, #0d03c3 100%);
   border-radius: 42px;
-  display: block;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
 }
 
-.hero-input {
-  margin: 0 auto;
-  width: 575px;
-  height: 67px;
-  border-width: 0px;
-  border-radius: 71px;
-  display: block;
+.hero-img {
+  position: absolute;
+  top: 686px;
+  left: 139px;
+  box-shadow: 0px 21.7647px 54.4118px 13.0588px rgba(0, 0, 0, 0.25);
+  border-radius: 21.7647px;
+}
+
+/* ============ Logos =============== */
+
+.logos {
+  padding-top: 394.5px;
+}
+
+.logos-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 98.72px;
 }
